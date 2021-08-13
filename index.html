@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript" src="./JS/librerias/JQuery/jquery.js"></script>
+	<script type="text/javascript" src="./JS/librerias/global_functions.js"></script>
+	<script type="text/javascript" src="./JS/landing.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./CSS/librerias/fontawesome/styles/all.min.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/librerias/global.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/landing.css">
+	<link rel="icon" type="image/gif" href="./IMG/logos/logo.png">
+
+	<title>Hi Connection</title>
+</head>
+<body>
+
+	<div id="general-loader" class="allScreen centerFlex">
+		<div>
+			<div class="loader">
+			    <svg viewBox="0 0 80 80">
+			        <circle id="test" cx="40" cy="40" r="32"></circle>
+			    </svg>
+			</div>
+
+			<div class="loader triangle" transform="translate(100,100)">
+			    <svg viewBox="0 0 86 80">
+			        <polygon points="43 8 79 72 7 72"></polygon>
+			    </svg>
+			</div><!-- 
+
+			<div class="loader">
+			    <svg viewBox="0 0 80 80">
+			        <rect x="8" y="8" width="64" height="64"></rect>
+			    </svg>
+			</div> -->
+		</div>
+	</div>
+
+	<header id="header">
+		<figure class="logo-section allScreen startFlex">
+			<center>
+				<img src="./IMG/logos/logo__sombreado.png">
+				<figcaption>
+					<p>
+						Somos Hi Connection
+					</p>
+					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</figcaption>
+			</center>
+		</figure>
+
+		<figure class="imagenes endFlex">
+			<img src="./IMG/portada/uno.jpg">
+		</figure>
+	</header>
+
+	<nav id="navegacion" class="allScreen">
+		<div class="continer bettwenFlex">
+			<figure class="startFlex">
+				<img src="./IMG/logos/logo__sombreado.png">
+				<figcaption>
+					HI CONNECTION
+				</figcaption>
+			</figure>
+
+			<ul id="menu-list">
+				<li class="listLi">
+					<button id="nosotros-link" class="link button-link">NOSOTROS</button>
+					<!-- <ul>
+						<li>
+							<button id='mision-link' class="link button">Misión</button>
+						</li>
+
+						<li>
+							<button id='vision-link' class="link button">Visión</button>
+						</li>
+
+						<li>
+							<button id='objetivos-link' class="link button">Objetivos</button>
+						</li>
+					</ul> -->
+				</li>
+				<li>
+					<button id="servicios-link" class="link button-link">SERVICIOS</button>
+				</li>
+				<li>
+					<button id="planes-link" class="link button-link">PLANES</button>
+				</li>
+				<li>
+					<button id="trabajos-link" class="link button-link">TRABAJOS</button>
+				</li>
+				<li>
+					<button id="contacto-link" class="link button-link">CONTACTO</button>
+				</li>
+			</ul>
+
+			<button id="menu" class="not-selected" title="Menú de navegación">
+				<i class="fas fa-bars"></i>
+			</button>
+		</div>
+	</nav>
+
+	<section id="ofertas">
+		<figure id="mision" class="item startFlex">
+			<figcaption>
+				<div>
+					<p class="title">
+						<span>Misión</span>
+					</p>
+					<p class="texto">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</figcaption>
+
+			<div class="imagen startFlex" style="background-image: url('/IMG/web-3.png');">
+				<div></div>
+			</div>
+		</figure>
+		
+		<figure id="vision" class="item endFlex">
+			<div class="imagen endFlex" style="background-image: url('/IMG/web-3.png');">
+				<div></div>
+			</div>
+
+			<figcaption>
+				<div>
+					<p class="title">
+						<span>Visión</span>
+					</p>
+					<p class="texto">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</figcaption>
+		</figure>
+	</section>
+
+	<!--<section id="nosotros">
+		<figure id="us">
+			<img src="./IMG/us.jpg">
+			<figcaption class="allScreen centerFlex">
+				<div>
+					<p class="title">
+						<span>Somos un equipo de profesionales preparados para la acción.</span>
+					</p>
+
+					<p class="text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</figcaption>
+
+			<div class="flecha allScreen centerFlex">
+				<div></div>
+			</div>
+		</figure>
+
+		<div id="objetivos" class="objetivos startFlex">
+			<div class="global-title">
+				<b>Los objetivos que queremos alcanzar</b>
+			</div>
+
+			<ul>
+				<li class="bettwenFlex">
+					<div class="title">
+						<p class="count">Objetivo #1</p>
+
+						<p class="text">
+							Título del objetivo a perseguir.
+						</p>
+					</div>
+
+					<div class="texto">
+						Aquí va la descripción de nuestro genialísimo objetivo, para que veas que tenemos altas expectativas.
+					</div>
+				</li>
+
+				<li class="bettwenFlex">
+					<div class="title">
+						<p class="count">Objetivo #1</p>
+
+						<p class="text">
+							Título del objetivo a perseguir.
+						</p>
+					</div>
+
+					<div class="texto">
+						Aquí va la descripción de nuestro genialísimo objetivo, para que veas que tenemos altas expectativas.
+					</div>
+				</li>
+
+				<li class="bettwenFlex">
+					<div class="title">
+						<p class="count">Objetivo #1</p>
+
+						<p class="text">
+							Título del objetivo a perseguir.
+						</p>
+					</div>
+
+					<div class="texto">
+						Aquí va la descripción de nuestro genialísimo objetivo, para que veas que tenemos altas expectativas.
+					</div>
+				</li>
+
+				<li class="bettwenFlex">
+					<div class="title">
+						<p class="count">Objetivo #1</p>
+
+						<p class="text">
+							Título del objetivo a perseguir.
+						</p>
+					</div>
+
+					<div class="texto">
+						Aquí va la descripción de nuestro genialísimo objetivo, para que veas que tenemos altas expectativas.
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>-->
+
+	<section id="servicios" class="bettwenFlex">
+		<div class="carrusel">
+			<div class="nav centerFlex">
+				<div>
+					<!-- <button></button>
+
+					<button></button> -->
+				</div>
+			</div>
+
+			<div class="screen">
+				<div class="contenido">
+					<div class="item" image='linear-gradient(to right, black, red)' color='purple'>
+						<h1>Título del servicio 1</h1>
+
+						<p>
+							Instalamos internet en tu cas como quieras y en el lugar que quieras mientras que sea en tu casa.
+						</p>
+
+						<p>
+							Instalamos internet en tu cas como quieras y en el lugar que quieras mientras que sea en tu casa.
+						</p>
+					</div>
+
+					<div class="item" image='url("./IMG/fondos/landing-carrusel.png")' color='grey'>
+						<h1>Título del servicio 2</h1>
+
+						<p>
+							Instalamos internet en tu cas como quieras y en el lugar que quieras mientras que sea en tu casa.
+						</p>
+
+						<p>
+							Instalamos internet en tu cas como quieras y en el lugar que quieras mientras que sea en tu casa.
+						</p>
+					</div>
+
+					<div class="item" image='url("./IMG/fondos/landing-carrusel.png")' color='orange'>
+						<h1>Título del servicio 3</h1>
+
+						<p>
+							Instalamos internet en tu cas como quieras y en el lugar que quieras mientras que sea en tu casa.
+						</p>
+
+						<p>
+							Instalamos internet en tu cas como quieras y en el lugar que quieras mientras que sea en tu casa.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="portada">
+			<h1>
+				Nuestros servicios son para ti.
+			</h1>
+			<p>Haremos todo lo posible por cumplir con tus expectativas</p>
+			<img src="./IMG/svg/world-map.svg">
+		</div>
+	</section>
+
+	<section id="planes">
+		<div class="global-title">
+			<p><b>Nuestros Planes</b></p>
+
+			Echa un vistazo a los planes que ofrecemos para que te mantengas conectado.
+		</div>
+		<div class="container">
+			<figure class="plan">
+				<center>	
+					<img src="./IMG/iconos/icono_ejemplo.png">
+				</center>
+
+				<figcaption>
+					<p class="title">
+						Título del plan
+					</p>
+
+					<p class="text">
+						Éste plan
+					</p>
+				</figcaption>
+
+				<div class="caja allScreen">
+				</div>
+
+				<ul class="caja allScreen">
+					<p class="title">
+						Lo que ofrece
+					</p>
+					<li>
+						Lo que nos gusta a todos los clientes.
+					</li>
+					<li>
+						Lo que nos gusta a todos los clientes.
+					</li>
+				</ul>
+			</figure>
+
+			<figure class="plan">
+				<center>	
+					<img src="./IMG/iconos/icono_ejemplo.png">
+				</center>
+
+				<figcaption>
+					<p class="title">
+						Título del plan
+					</p>
+
+					<p class="text">
+						Éste plan ofrece valiosos servicios que te encantarán, igualmente a tu familia. De verdad lo amarás.
+					</p>
+				</figcaption>
+
+				<div class="caja allScreen">
+				</div>
+
+				<ul class="caja allScreen">
+					<p class="title">
+						Lo que ofrece
+					</p>
+					<li>
+						Lo que nos gusta
+					</li>
+					<li>
+						Lo que nos gusta
+					</li>
+				</ul>
+			</figure>
+			
+			<figure class="plan">
+				<center>	
+					<img src="./IMG/iconos/icono_ejemplo.png">
+				</center>
+
+				<figcaption>
+					<p class="title">
+						Título del plan
+					</p>
+
+					<p class="text">
+						Éste plan ofrece valiosos servicios que te encantarán, igualmente a tu familia. De verdad lo amarás.
+					</p>
+				</figcaption>
+
+				<div class="caja allScreen">
+				</div>
+
+				<ul class="caja allScreen">
+					<p class="title">
+						Lo que ofrece
+					</p>
+					<li>
+						Lo que nos gusta
+					</li>
+					<li>
+						Lo que nos gusta
+					</li>
+				</ul>
+			</figure>
+			
+			<figure class="plan">
+				<center>	
+					<img src="./IMG/iconos/icono_ejemplo.png">
+				</center>
+
+				<figcaption>
+					<p class="title">
+						Título del plan
+					</p>
+
+					<p class="text">
+						Éste plan ofrece valiosos servicios que te encantarán, igualmente a tu familia. De verdad lo amarás.
+					</p>
+				</figcaption>
+
+				<div class="caja allScreen">
+				</div>
+
+				<ul class="caja allScreen">
+					<p class="title">
+						Lo que ofrece
+					</p>
+					<li>
+						Lo que nos gusta
+					</li>
+					<li>
+						Lo que nos gusta
+					</li>
+				</ul>
+			</figure>
+		</div>
+	</section>
+
+	<section id="contacto">
+		<div class="contenedor bettwenFlex">
+			<h1 class="h1">
+				CONTÁCTANOS
+			</h1>
+
+			<div class="formulario">
+				<form id="contact-form">
+					<div class="float-label">
+						<label for="nombre">Nombre y apellido <span class="obligatory">*</span></label>
+						<input type="text" id="nombre" minlength="5" maxlength="101" required>
+						<div class="borde">
+							<div></div>
+						</div>
+						<p id="nombreError" class="error"></p>
+					</div>
+					<div class="bettwenFlex">
+						<div class="float-label">
+							<label for="email">Correo Electrónico <span class="obligatory">*</span></label>
+							<input type="email" id="email" maxlength="132" required>
+							<div class="borde">
+								<div></div>
+							</div>
+							<p id="emailError" class="error"></p>
+						</div>
+
+						<div class="float-label">
+							<label for="telefono">Número telefónico</label>
+							<input type="tlf" id="telefono" required>
+							<div class="borde">
+								<div></div>
+							</div>
+							<p id="telefonoError" class="error"></p>
+						</div>
+					</div>
+
+					<div class="float-label">
+						<label for="mensaje">Mensaje <span class="obligatory">*</span></label>
+						<textarea id="mensaje" minlength="4" maxlength="1500"></textarea>
+						<div class="borde">
+							<div></div>
+						</div>
+						<p id="emailError" class="error"></p>
+					</div>
+
+					<center>
+						<button type="submit" title="Enviar">
+							Enviar
+						</button>
+					</center>
+				</form>
+			</div>
+
+			<div class="info">
+				<h1>Información</h1>
+				
+				<figure class="bettwenFlex">
+					<img src="./IMG/iconos/address.svg">
+					<figcaption>
+						<p><b>UBICACIÓN</b></p>
+						<p>Venezuela, Edo. Anzoátegui, Barcelona, Av. Caracas, Calle 10, Estación de servicio.</p>
+					</figcaption>
+				</figure>
+
+				<figure class="bettwenFlex">
+					<img src="./IMG/iconos/email.svg">
+					<figcaption>
+						<p><b>CORREO ELECTRÓNICO</b></p>
+						<p>hiconnection@gmail.com</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="bettwenFlex">
+					<img src="./IMG/iconos/telephone.svg">
+					<figcaption>
+						<p><b>TELÉFONO</b></p>
+						<p>+58 426-5821865</p>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<div class="second-loader allScreen">
+			<section class="centerFlex">
+				<div id="bars">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- <div class="load-1">
+					<div class="load-2 child">
+						<div class="load-3 child">
+							<div class="token"></div>
+						</div>
+					</div>
+				</div> -->
+			</section>
+		</div>
+	</section>
+
+	<section id="notification-section" class="allScreen">
+		<!-- <figure class="notificacion bettwenFlex success">
+			<img src="./IMG/iconos/sent-mail.svg">
+			<figcaption>
+				<h1>
+					Título
+				</h1>
+				<div class="text">
+					<p>Felicitaciones, panita mío.</p>
+					<p>Felicitaciones, panita mío.</p>
+				</div>
+			</figcaption>
+
+			<button type="button" class="close" title="Cerrar">
+				<i class="fa fa-times"></i>
+			</button>
+		</figure> -->
+	</section>
+</body>
+</html>

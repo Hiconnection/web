@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2? family = Open + Sans + Condensed: wght @ 300 & display = swap");
+.allScreen {
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.truncado {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.obligatory {
+  color: #c80000;
+}
+
+.centerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bettwenFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.startFlex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.endFlex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.aroundFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.float-label {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.25em 0.5em;
+  padding-top: 1em;
+}
+.float-label label {
+  position: absolute;
+  font-size: 1.25vw;
+  top: 1.5em;
+  left: 1em;
+  opacity: 0.75;
+  cursor: text;
+  z-index: 0;
+}
+.float-label input, .float-label textarea {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 0.5em;
+  font-size: 1.25vw;
+  border: none;
+  border-bottom: 0.15em solid transparent;
+  background: none;
+  z-index: 1;
+}
+.float-label input:focus, .float-label textarea:focus {
+  outline: none;
+}
+.float-label input:focus + .borde div, .float-label textarea:focus + .borde div {
+  width: 100%;
+}
+.float-label .borde {
+  width: 100%;
+  height: 0.1em;
+  background: grey;
+}
+.float-label .borde div {
+  position: relative;
+  width: 0%;
+  height: 100%;
+  margin: auto;
+  transition: 500ms;
+}
+.float-label .borde div:before {
+  content: "";
+  position: absolute;
+  top: auto;
+  right: 0%;
+  bottom: -15%;
+  left: 0%;
+  height: 150%;
+  background: grey;
+}
+.float-label .error {
+  width: 100%;
+  padding: 0 0.5em;
+  margin-top: 0.25em;
+  font-size: 0.9vw;
+}
+
+.error {
+  color: #960000;
+}
+
+.second-loader {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.second-loader section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.second-loader section #bars {
+  position: absolute;
+  display: block;
+  width: 50px;
+  margin: -25px 0 0 -25px;
+}
+.second-loader section #bars span {
+  position: absolute;
+  display: block;
+  bottom: 1em;
+  width: 0.45em;
+  height: 0.175em;
+  box-shadow: 0 0 0.25em black;
+  background: rgba(121, 12, 134, 0.25);
+  -webkit-animation: bars2 2s infinite ease-in-out;
+  animation: bars2 2s infinite ease-in-out;
+}
+.second-loader section #bars span:nth-child(2) {
+  left: 11px;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.second-loader section #bars span:nth-child(3) {
+  left: 22px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.second-loader section #bars span:nth-child(4) {
+  left: 33px;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.second-loader section #bars span:nth-child(5) {
+  left: 44px;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@keyframes bars2 {
+  0% {
+    height: 0.15em;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    background: rgba(121, 12, 134, 0.25);
+  }
+  25% {
+    height: 1.75em;
+    -webkit-transform: translateX(0.15em);
+    transform: translateX(5px);
+    -webkit-transform: translateX(0.15em);
+    transform: translateX(5px);
+    background: #790c86;
+  }
+  50% {
+    height: 0.15em;
+    -webkit-transform: translateX(0.45em);
+    transform: translateX(0.45em);
+    -webkit-transform: translateX(0.45em);
+    transform: translateX(0.45em);
+    background: rgba(121, 12, 134, 0.25);
+  }
+  100% {
+    height: 0.15em;
+    -webkit-transform: translateX(0.45em);
+    transform: translateX(0.45em);
+    -webkit-transform: translateX(0.45em);
+    transform: translateX(0.45em);
+    background: rgba(121, 12, 134, 0.25);
+  }
+}
+@-webkit-keyframes bars2 {
+  0% {
+    height: 0.15em;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    background: rgba(121, 12, 134, 0.25);
+  }
+  25% {
+    height: 1.75em;
+    -webkit-transform: translateX(0.15em);
+    transform: translateX(5px);
+    background: #790c86;
+  }
+  50% {
+    height: 0.15em;
+    -webkit-transform: translateX(0.45em);
+    transform: translateX(0.45em);
+    background: rgba(121, 12, 134, 0.25);
+  }
+  100% {
+    height: 0.15em;
+    -webkit-transform: translateX(0.45em);
+    transform: translateX(0.45em);
+    background: rgba(121, 12, 134, 0.25);
+  }
+}
+#notification-section {
+  position: fixed;
+  top: auto;
+  left: auto;
+  width: 30%;
+  padding: 1em;
+  padding-top: 0%;
+  padding-left: 0%;
+  transform: scale(1);
+  z-index: 13;
+}
+#notification-section .notificacion {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin-bottom: 0.75em;
+  border-radius: 0.2em;
+  border: 0.075em solid #c8c8c8;
+  background-color: white;
+  opacity: 0;
+  transform: translateY(3em);
+}
+#notification-section .notificacion img {
+  width: 25%;
+  padding: 2.5%;
+}
+#notification-section .notificacion figcaption {
+  width: 75%;
+  padding: 1em;
+  padding-left: 0.5em;
+}
+#notification-section .notificacion figcaption h1 {
+  margin-bottom: 0.3em;
+  font-size: 1.25vw;
+}
+#notification-section .notificacion figcaption .text {
+  font-size: 0.9vw;
+}
+#notification-section .notificacion figcaption .text p {
+  margin-bottom: 0.05em;
+}
+#notification-section .notificacion .close {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 0.8vw;
+  padding: 0.125em 0.325em;
+  color: #969696;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  transition: 150ms;
+}
+#notification-section .notificacion .close:hover {
+  color: #646464;
+}
+#notification-section .notificacion:last-child {
+  margin-bottom: 0%;
+}
+#notification-section .success {
+  box-shadow: 0 0 0.25em #baf4c6;
+}
+#notification-section .success figcaption h1 {
+  color: #0c821e;
+}
+#notification-section .fail {
+  box-shadow: 0 0 0.25em #ffc8c8;
+}
+#notification-section .fail figcaption h1 {
+  color: #c81919;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+body {
+  background: #fafafa;
+  font-size: 1.25vw;
+  color: #505050;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=global.css.map */
